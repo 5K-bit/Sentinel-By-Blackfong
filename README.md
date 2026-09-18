@@ -69,6 +69,27 @@ python3 sentinel.py report
 Use network scanning only against systems you own or are authorized to test.
 The optional `--ports` argument limits an authorized scan to explicit ports or ranges; omitting it preserves Nmap's default port selection.
 
+## Running the tests
+
+The suite runs under `pytest` — the tests use its `tmp_path` and `monkeypatch`
+fixtures, so it is the supported runner. Install the development dependency once,
+then run it from the project root:
+
+```bash
+python3 -m pip install -r requirements-dev.txt
+python3 -m pytest
+```
+
+`pytest.ini` points at `tests/`, so a bare `python3 -m pytest` collects the whole
+suite with no arguments. To run one test:
+
+```bash
+python3 -m pytest tests/test_sentinel.py::test_validate_port_spec
+```
+
+`pytest` is required only for the tests. Running `sentinel.py` itself still needs
+nothing beyond the Python standard library.
+
 ## Project layout
 
 ```text
@@ -76,6 +97,8 @@ BLACKFONG-Sentinel-Recovered/
 ├── sentinel.py
 ├── README.md
 ├── requirements.txt
+├── requirements-dev.txt
+├── pytest.ini
 ├── data/
 ├── reports/
 ├── exports/
