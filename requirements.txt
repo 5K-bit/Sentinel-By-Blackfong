@@ -1,2 +1,4 @@
 # BLACKFONG SENTINEL uses only the Python standard library.
 # External capabilities (nmap, iproute2, systemd, Docker, firewall tools) are OS packages.
+#
+# Running the test suite needs pytest; see requirements-dev.txt.

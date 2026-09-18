@@ -1,0 +1,9 @@
+# Development-only dependencies for BLACKFONG SENTINEL.
+#
+# The application itself needs nothing from this file — sentinel.py runs on the
+# Python standard library alone. These are only for running the test suite.
+#
+#   python3 -m pip install -r requirements-dev.txt
+#   python3 -m pytest
+
+pytest>=8.0
