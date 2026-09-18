@@ -1,0 +1,12 @@
+usage: sentinel [-h] [-v] [-y]
+                {status,ports,services,processes,authlog,firewall,docker,users,crons,network,findings,alerts,history,report,audit,monitor,scan} ...
+
+BLACKFONG SENTINEL v2.1.0-recovered
+
+positional arguments:
+  {status,ports,services,processes,authlog,firewall,docker,users,crons,network,findings,alerts,history,report,audit,monitor,scan}
+
+options:
+  -h, --help            show this help message and exit
+  -v, --verbose
+  -y, --yes             skip scan confirmation

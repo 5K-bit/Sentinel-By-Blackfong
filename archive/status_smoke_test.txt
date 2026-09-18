@@ -1,0 +1,12 @@
+
+[1m[96m┌────────────────────────────────────────────────────────────┐
+│  BLACKFONG SENTINEL  v2.1.0-recovered                      │
+└────────────────────────────────────────────────────────────┘[0m
+
+  User      : root
+  Machine   : localhost
+  OS        : Linux 6.18.35
+  IP        : 172.26.39.197
+  Root      : Yes
+  DB        : /mnt/data/BLACKFONG-Sentinel-Recovered/data/sentinel.db
+
